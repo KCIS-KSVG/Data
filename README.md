@@ -1,6 +1,5 @@
 # KSVG Documentation Repository
 [![Contributors](https://img.shields.io/github/contributors/KCIS-KSVG/Documentation)](https://github.com/KCIS-KSVG/Documentation/graphs/contributors)
-[![License](https://img.shields.io/badge/License-N/A-blue.svg)](LICENSE)
 
 ## 1. 🚀 Purpose and Description
 
@@ -13,8 +12,6 @@ Its primary purpose is to **provide a stable location for downloading and sharin
 *   Organizational standardization documents and guidelines
 *   Other relevant public resources
 
-This repository complements the main [KSVG Pages Website/Repository](link-to-your-website-repo-here) by acting as the backend storage for downloadable assets presented on the site.
-
 
 ## 2. 📧 Contact
 
@@ -22,7 +19,15 @@ For questions or feedback about this project, please contact:
 - Email: support_ksvg@163.com
 
 
-## 3. 📁 Repository Structure
+## 3. ❓ Abbreviations
+| Abbreviations     | Description                      |
+|:------------|:---------------------------------:|
+| DES      | Project and Session Descriptions (Namelist, Planner)       |
+| STR    | StoryBoard, CallRoll and Script   |
+| EXT   | External Files sourced Outside of KSVG|
+| UNC | Uncategorized File |
+
+## 4. 📁 Repository Structure
 
 The repository is organized into the following main categories and sub-levels:
 
