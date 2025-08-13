@@ -1,4 +1,4 @@
-projectId,id,name,startDate,startDate,site,notes,status
+projectId,id,name,startDate,endDate,site,notes,status
 PRJ-2501,SES-0001,TEST SESSION 01,45787,45823,音乐厅,TEST SESSION,计划
 PRJ-2502,SES-0002,TEST SESSION 02,45585,45587,音乐厅,TEST SESSION,进行
 PRJ-2503,SES-0003,TEST SESSION 03,45284,45284,音乐厅,TEST SESSION,完成
