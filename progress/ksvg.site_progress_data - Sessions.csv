@@ -1,7 +1,6 @@
-projectId,name,id,staff,camera,notes,status
-2503,毕业典礼彩排,GRDT-S01,"张三, 李四","A, B",测试直播流,完成
-2503,毕业典礼主会场,GRDT-S02,全员,"A, B, C, D",-,进行
-2502,开幕式,SPRT-S01,王五,"航拍, A",-,完成
-2502,田径决赛,SPRT-S02,赵六,"C, D",-,完成
-2401,闭幕式,SPRT-S03,"王五, 赵六","A, D",-,完成
-2401,晚会全程,XMAS-S01,-,-,所有资料已归档,归档
+projectId,id,name,startDate,startDate,site,notes,status
+PRJ-2501,SES-0001,TEST SESSION 01,45787,45823,音乐厅,TEST SESSION,计划
+PRJ-2502,SES-0002,TEST SESSION 02,45585,45587,音乐厅,TEST SESSION,进行
+PRJ-2503,SES-0003,TEST SESSION 03,45284,45284,音乐厅,TEST SESSION,完成
+PRJ-2504,SES-0004,TEST SESSION 04,45284,45284,音乐厅,TEST SESSION,归档
+PRJ-2504,SES-0005,TEST SESSION 05,45284,45284,音乐厅,TEST SESSION,取消
