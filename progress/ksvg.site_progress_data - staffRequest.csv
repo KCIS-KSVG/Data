@@ -1,7 +1,7 @@
-sessionId,Name,identity,role,note
-SES-0001,简帜轩,15563,Videographer,无记录测试
-SES-0002,简帜轩,15563,Videographer,无记录测试
-SES-0003,简帜轩,15563,Videographer,无记录测试
-SES-0004,简帜轩,15563,Videographer,无记录测试
-SES-0005,简帜轩,15563,Videographer,无记录测试
-SES-0005,林思航,15488,Photographer,无记录测试
+sessionId,id,Name,identity,role,note
+SES-0001,HUR-0001,简帜轩,15563,Videographer,无记录测试
+SES-0002,HUR-0002,简帜轩,15563,Videographer,无记录测试
+SES-0003,HUR-0003,简帜轩,15563,Videographer,无记录测试
+SES-0004,HUR-0004,简帜轩,15563,Videographer,无记录测试
+SES-0005,HUR-0005,简帜轩,15563,Videographer,无记录测试
+SES-0005,HUR-0006,林思航,15488,Photographer,无记录测试
