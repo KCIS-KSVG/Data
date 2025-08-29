@@ -1,7 +1,1 @@
-projectId,id,name,category,description,staff,notes,status
-PRJ-2501,PRO-0001,产品请求1,PHOTO_LIVE_STREAM,做一个漂亮的视频,简帜轩,测试备注,计划
-PRJ-2502,PRO-0002,产品请求2,VIDEO_LIVE_STREAM,做一个漂亮的视频,简帜轩,测试备注,进行
-PRJ-2503,PRO-0003,产品请求3,EVENT_VIDEO_CLIP,做一个漂亮的视频,简帜轩,测试备注,完成
-PRJ-2504,PRO-0004,产品请求4,FULL_VIDEO_EPISODE,做一个漂亮的视频,简帜轩,测试备注,完成
-PRJ-2505,PRO-0005,产品请求5,PHOTO_ALBULM,做一个漂亮的视频,简帜轩,测试备注,取消
-PRJ-2505,PRO-0006,产品请求6,RAW_MEDIA,做一个漂亮的视频,简帜轩,测试备注,完成
+projectId,id,name,category,description,staff,status

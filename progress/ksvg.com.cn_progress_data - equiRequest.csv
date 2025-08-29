@@ -1,7 +1,1 @@
-sessionId,id,name,serialNumber,owner,category,description,notes
-SES-0001,DEV-0001,Sony ILME-FX30,123456,15563,CAMERA,固定机位设备,测试备注
-SES-0002,DEV-0002,DJI RS3,123456,15563,GIMBAL,固定机位设备,测试备注
-SES-0003,DEV-0003,Sony ILCE-7RM6,123456,15563,CAMERA,固定机位设备,测试备注
-SES-0004,DEV-0004,Sony ILCE-7RM7,123456,15563,CAMERA,固定机位设备,测试备注
-SES-0005,DEV-0005,Sony ILCE-7RM8,123456,15563,CAMERA,固定机位设备,测试备注
-SES-0005,DEV-0006,Sony ILCE-7CM2,123456,15563,CAMERA,固定机位设备,测试备注
+sessionId,equipId,id,description
