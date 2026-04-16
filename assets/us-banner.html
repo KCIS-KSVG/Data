@@ -1,0 +1,70 @@
+<style>
+    .usa-banner { background-color: #f0f0f0; color: #1b1b1b; font-size: 0.8rem; position: relative; z-index: 2000; border-bottom: 1px solid #e2e2e2; width: 100%; }
+    .usa-accordion__heading { max-width: 1200px; margin: 0 auto; padding: 10px 20px; display: flex; align-items: center; flex-wrap: wrap; gap: 10px; position: relative; background-color: #f0f0f0; z-index: 2002; }
+    .flag-icon { width: 16px; opacity: 0.7; border-radius: 2px; }
+    .usa-banner__button { background: none; border: none; color: #005ea2; font-weight: 700; cursor: pointer; padding: 0 5px; text-decoration: underline; display: inline-flex; align-items: center; font-size: 0.8rem; }
+    .usa-banner__button:hover { text-decoration: none; }
+    .icon-arrow { width: 10px; height: 10px; margin-left: 4px; transition: transform 0.3s ease; fill: currentColor; }
+    .usa-banner__button[aria-expanded="true"] .icon-arrow { transform: rotate(180deg); }
+    .usa-banner__content { display: none; position: absolute; top: 100%; left: 0; width: 100%; background-color: #f0f0f0; border-bottom: 1px solid #dcdcdc; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); padding: 20px 0; z-index: 2001; }
+    .usa-banner__grid { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .media-block { display: flex; gap: 15px; }
+    .media-icon { background: #dcdcdc; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .media-body h3 { font-size: 0.85rem; margin-bottom: 3px; font-weight: 700; line-height: 1.2; }
+    .media-body p { font-size: 0.8rem; color: #555; line-height: 1.4; margin: 0; }
+    .brand-strip { height: 4px; width: 100%; background: linear-gradient(90deg, #002b49 60%, #c41230 100%); }
+    @media (max-width: 900px) { .usa-banner__grid { grid-template-columns: 1fr; gap: 20px; } }
+</style>
+
+<header class="usa-banner">
+    <div class="usa-accordion__heading">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/International_Flag_of_Planet_Earth.svg" alt="Flag" class="flag-icon">
+        <div style="font-weight:400; margin-right: 5px;">An official website of the KSVG Organization</div>
+        <!-- 无需 onclick，全靠底层事件代理 -->
+        <button class="usa-banner__button" aria-expanded="false" tabindex="0">
+            Here’s how you know <svg class="icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z" /></svg>
+        </button>
+    </div>
+    <div class="usa-banner__content" id="govBannerContent">
+        <div class="usa-banner__grid">
+            <div class="media-block">
+                <div class="media-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </div>
+                <div class="media-body">
+                    <h3>Official websites use .ksvg.com.cn</h3>
+                    <p>A <strong>.ksvg.com.cn</strong> website belongs to an official KSVG entity or an organization hosted under KSVG infrastructure.</p>
+                </div>
+            </div>
+            <div class="media-block">
+                <div class="media-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                </div>
+                <div class="media-body">
+                    <h3>Secure Connection</h3>
+                    <p>A lock or <strong>https://</strong> means you’ve safely connected to the server.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="brand-strip"></div>
+
+<script>
+    // 使用 IIFE 自执行，绑定一次事件即可服务全站
+    (function() {
+        if (window.usBannerBound) return;
+        window.usBannerBound = true;
+        document.addEventListener('click', function(e) {
+            const btn = e.target.closest('.usa-banner__button');
+            if (btn) {
+                const content = document.getElementById('govBannerContent');
+                if (content) {
+                    const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+                    content.style.display = isExpanded ? 'none' : 'block';
+                    btn.setAttribute('aria-expanded', !isExpanded);
+                }
+            }
+        });
+    })();
+</script>
