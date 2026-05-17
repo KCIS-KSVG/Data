@@ -1,17 +1,18 @@
-# KSVG Data Repository
-[![Contributors](https://img.shields.io/github/contributors/KCIS-KSVG/Documentation)](https://github.com/KCIS-KSVG/Documentation/graphs/contributors)
+# KSVG Data Repository (Archived)
 
-## 1. 🚀 Purpose and Description
+> **⚠️ 项目状态：已归档 (Archived)**
+>
+> 本项目自 **2026年5月** 起已正式归档，进入**只读**状态。
+> 原数据服务仓库（`Data`）已被停用，其内容已整合或不再需要。
 
-This repository serves as the database for the **KSVG** organization official website (Page).
+## 归档原因
 
-## 2. 📧 Contact
+- KSVG 官网已移除所有动态数据依赖。
+- 统一身份认证 (UIA) 系统及相关数据服务已下线。
+- 原有数据已通过静态文件（CSV、JSON）等方式嵌入各页面，或已不再使用。
 
-For questions or feedback about this project, please contact:
-- Email: support_ksvg@163.com (Organization)
-- Email: jianzhixuan.work@gmail.com (Developer)
+## 后续维护
 
-## 3. 📁 Repository Structure
+**本项目将不再接收任何更新、Issue 或 Pull Request。**
 
-The repository is organized into the following main categories and sub-levels:
-(Sorry, the table is not available now...)
+如误访问到此仓库，请访问主站 [ksvg.com.cn](https://ksvg.com.cn) 获取最新信息。
